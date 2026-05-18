@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { API_BASE_URL } from "../config";
 
-const API_URL = "http://localhost:5000/api/auth/login";
+const API_URL = `${API_BASE_URL}/auth/login`;
 
 function Login() {
   const [email, setEmail] = useState("");

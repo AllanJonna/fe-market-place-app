@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { API_BASE_URL } from '../config';
 
-const API_URL = 'http://localhost:5000/api/products';
+const API_URL = `${API_BASE_URL}/products`;
 
 function formatRupiah(value) {
   return new Intl.NumberFormat('id-ID', {

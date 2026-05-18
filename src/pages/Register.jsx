@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { API_BASE_URL } from "../config";
 
-const API_URL = "http://localhost:5000/api/auth/register";
+const API_URL = `${API_BASE_URL}/auth/register`;
 
 function Register() {
   const [name, setName] = useState("");
